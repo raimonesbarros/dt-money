@@ -6,15 +6,23 @@
       "type": "income",
       "category": "Venda",
       "price": 14000,
-      "createAt": "2023-04-23T19:36:44.505Z"
+      "createdAt": "2023-04-23T19:36:44.505Z"
     },
     {
       "id": "2",
       "description": "Hamburger",
       "type": "outcome",
       "category": "Alimentação",
-      "price": 59,
-      "createAt": "2023-04-23T19:36:44.505Z"
+      "price": 19,
+      "createdAt": "2023-04-23T19:36:44.505Z"
+    },
+    {
+      "id": "3",
+      "description": "Ignite course",
+      "type": "outcome",
+      "category": "Educação",
+      "price": 1980,
+      "createdAt": "2023-04-20T19:36:44.505Z"
     }
   ]
 }
