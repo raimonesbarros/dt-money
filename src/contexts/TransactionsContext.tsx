@@ -1,13 +1,9 @@
 import { ReactNode, createContext, useEffect, useState } from "react";
 import { api } from "../lib/axios";
 
-interface TransactionType {
-  category: string;
+interface TransactionType extends NewTransactionType {
   createdAt: string;
-  description: string;
   id: number;
-  price: number;
-  type: "income" | "outcome";
 }
 
 interface TransactionsProviderProps {
@@ -35,6 +31,8 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
   async function fetchLoadTransactions(query?: string) {
     const transactions = await api.get("/transactions", {
       params: {
+        _sort: "createdAt",
+        _order: "desc",
         q: query,
       },
     });
