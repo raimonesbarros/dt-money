@@ -44,6 +44,14 @@ or
 
 - To start server:
 
+`npm install -g json-server`
+
+or
+
+`yarn add -g json-server`
+
+then:
+
 `$ npm run dev:server`
 
 or
